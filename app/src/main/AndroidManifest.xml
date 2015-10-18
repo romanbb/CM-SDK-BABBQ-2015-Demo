@@ -29,6 +29,14 @@
                 <action android:name="org.cyanogenmod.cmsdkdemobabbq2015.ACTION_CUSTOM_TILE_CLICKED" />
             </intent-filter>
         </receiver>
+        <receiver
+            android:name=".ProfileChangeReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cyanogenmod.platform.intent.action.PROFILE_SELECTED" />
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>
