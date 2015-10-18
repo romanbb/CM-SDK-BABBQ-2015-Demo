@@ -1,0 +1,12 @@
+
+*.DS_Store
+
+local.properties
+
+# Android Studio / IntelliJ IDEA 
+*.iws
+.idea
+
+build
+.gradle
+captures
