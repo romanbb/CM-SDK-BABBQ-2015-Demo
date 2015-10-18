@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="org.cyanogenmod.cmsdkdemobabbq2015" >
 
+    <uses-permission android:name="cyanogenmod.permission.PUBLISH_CUSTOM_TILE" />
 
     <application
         android:allowBackup="true"
@@ -19,6 +20,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <receiver
+            android:name=".CustomTileReceiver"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="org.cyanogenmod.cmsdkdemobabbq2015.ACTION_CUSTOM_TILE_CLICKED" />
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>
